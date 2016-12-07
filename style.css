@@ -87,3 +87,16 @@ h1{
 	color:#808080;
 }
 
+.fin{
+	padding: 10px 10px 10px 10px;
+	margin: 25px;
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 8px #C0C0C0;
+}
+
+h2{ 
+    margin-top: 20px;
+	color:#696969;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800; 
+}
