@@ -56,8 +56,26 @@ html>body #menu li ul ul{
 	border-left: 1px solid transparent
 }
 
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #000; /* On passe le texte en noir... */
+        background: #fff; /* ... et au contraire, le fond en blanc */
+}
+#menu ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu a{
+text-decoration: none;
+    display: block;
+}
 
-/* CORPS SITE */
+#menu li:hover ul{
+	left: auto;
+}
+
+
+/* -------------------------------------------   CORPS SITE  --------------------------------*/
 
 body{
 	background-color: #FFFFFF;
