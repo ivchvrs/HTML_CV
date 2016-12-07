@@ -83,6 +83,12 @@ text-decoration: none;
 
 /* -------------------------------------------   CORPS SITE  --------------------------------*/
 
+nav{
+	float: left;
+}
+
+
+
 body{
 	background-color: #FFFFFF;
 }
@@ -101,6 +107,7 @@ h1{
 	color:#061719;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
+	text-shadow: 2px 2px 8px #C0C0C0;
 }
 
 /* Div INFORMATION */
