@@ -11,7 +11,7 @@
 
 #menu { /* style ensemble menu */
 	position: fixed;
-	margin-top: -43px;
+	margin-top: -50px;
 	margin-left: 450px;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
@@ -100,6 +100,7 @@ body{
 
 .Page{
 	margin: 40px auto;
+	margin-top: 50px;
     width: 1050px;
     border: 1px transparent;
     box-shadow: 0px 0px 8px #C0C0C0;
@@ -166,8 +167,9 @@ h1{
 	margin-left: 10px;
 	margin-top: 23px;
 	float: left;
-	font-family: 'Molle', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
+
 
 }
 
