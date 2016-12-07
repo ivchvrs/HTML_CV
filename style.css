@@ -88,10 +88,18 @@ text-decoration: none;
 
 
 
-nav{
-	float: left;
+nav{                        
+	float: left;              /* Description */
+	position: fixed;
+	margin-left: 100px;
 }
 
+.desc{
+	margin-left: 15px;
+}
+.imgP{
+	margin-left: 15px;
+}
 
 
 body{
@@ -164,7 +172,8 @@ h1{
 	
 }
 .Date{
-	margin-left: 10px;
+	list-style:none;
+	margin-left: 20px;
 	margin-top: 23px;
 	float: left;
 	font-family: 'Raleway', sans-serif;
