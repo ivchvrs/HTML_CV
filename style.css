@@ -91,14 +91,17 @@ text-decoration: none;
 nav{                        
 	float: left;              /* Description */
 	position: fixed;
-	margin-left: 100px;
+	margin-left: 60px;
+	border: 1px solid black;
 }
 
+
 .desc{
-	margin-left: 15px;
+	padding: 50px 50px 50px 50px;
+	
 }
 .imgP{
-	margin-left: 15px;
+	padding: 10px 10px 10px 10px;
 }
 
 
