@@ -11,7 +11,7 @@
 
 #menu { /* style ensemble menu */
 	position: fixed;
-	margin-top: -19px;
+	
 	margin-left: 450px;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
@@ -85,3 +85,8 @@ text-decoration: none;
 
 /* fin css menu */
 
+
+
+.container{
+	padding-top:  40px;
+}
