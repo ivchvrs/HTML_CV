@@ -1,0 +1,222 @@
+/* menu deroulant */
+
+#menu, #menu ul { /* Liste */
+	padding: 10px 10px 0px 0px; /* pas de marge */
+	margin: 0px; 
+	list-style: none;
+	line-height: 25px;
+	text-align: center;
+
+}
+
+#menu { /* style ensemble menu */
+	position: fixed;
+	margin-top: -50px;
+	margin-left: 450px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	font-size: 21px;
+}
+
+#menu a { /* contenu de la liste */
+	display: block; /* on change le type d'élément, les liens deviennent des balises de type block */
+    padding: 0;
+    background: #F5F5F5;
+
+	box-shadow: 0px 0px 8px #C0C0C0;
+    color: #000;
+    text-decoration: none;
+    width: 240px;
+}
+
+#menu li { /* Éléments des listes */ 
+	float: center; /* IE */
+	border-right: 1px solid #fff;
+	position: relative;
+	display: inline-block;
+}
+
+html>body #menu li {
+	border-right: 1px solid transparent;
+}
+
+#menu li ul {
+	position: absolute;
+	width: 144px;
+	left: -999em;
+
+}
+
+#menu li ul li {
+	border-top: 1px solid #fff;
+
+}
+html>body # li ul li {
+	border-top: 1px solid transparent;
+}
+
+#menu li ul ul {
+	margin: -22px 0 0 144px;
+	border-left: 1px solid #fff;
+
+}
+
+html>body #menu li ul ul{
+	border-left: 1px solid transparent
+}
+
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #fff; /* On passe le texte en noir... */
+        background: Tomato; /* ... et au contraire, le fond en blanc */
+}
+#menu ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu a{
+text-decoration: none;
+    display: block;
+}
+
+#menu li:hover ul{
+	left: auto;
+}
+
+
+/* -------------------------------------------   CORPS SITE  --------------------------------*/
+
+
+
+nav{                        
+	float: left;              /* Description */
+	position: fixed;
+	margin-left: 60px;
+	border: 1px solid black;
+}
+
+
+.desc{
+	padding: 50px 50px 50px 50px;
+	
+}
+.imgP{
+	padding: 10px 10px 10px 10px;
+}
+
+
+body{
+	background-color: #FFFFFF;
+}
+
+.Page{
+	margin: 40px auto;
+	margin-top: 50px;
+    width: 1050px;
+    border: 1px transparent;
+    box-shadow: 0px 0px 8px #C0C0C0;
+    padding: 20px 20px 20px 20px;
+    border-radius: 2%
+}
+
+h1{
+	margin-top: 20px;
+	color:#061719;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	text-shadow: 2px 2px 8px #C0C0C0;
+}
+
+/* Div INFORMATION */
+
+.info{
+	margin: center;
+	padding: 5px 20px 10px 20px;
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 8px #C0C0C0;
+
+}
+
+.perso{
+	font-family: 'Raleway', sans-serif;
+
+}
+.img{
+
+	float: right;
+	margin-top: 4px;
+	
+}
+ #contact{
+ 	margin: 0px;
+ 	color:#A9A9A9;
+ 	font-weight: 'Raleway', sans-serif;
+ }
+ #perso {
+
+ 	color: #A9A9A9;
+ 	font-family: 'Raleway', sans-serif;
+ 	margin: 0px;
+ }
+
+/* Fermeture d'info */
+
+
+ .groupe {   /* casse exp+for */
+ 	background-color: #F5F5F5;
+ 	padding: 10px 10px 10px 20px;
+ 	box-shadow: 0px 0px 8px #C0C0C0;
+ }
+
+#experience{
+	margin-left: 100px;
+	font-family: 'Reem Kufi', sans-serif;
+
+	
+}
+.Date{
+	list-style:none;
+	margin-left: 20px;
+	margin-top: 23px;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+
+
+}
+
+#titre{
+	margin-left: 300px;
+	color: Tomato;
+}
+
+#titre2{
+	margin-left: 400px;
+	color: Tomato;
+}
+
+#ville{
+	color:#808080;
+}
+
+.fin{
+	padding: 5px 10px 10px 10px;
+	margin: auto;
+	margin-top: 45px;
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 8px #C0C0C0;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	color:#696969;
+}
+
+#at{
+	margin-left: 400px;
+	float: right;
+}
+img {
+	border-radius: 15%
+
+}
