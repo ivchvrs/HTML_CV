@@ -75,7 +75,7 @@ html>body #menu li ul ul{
     display: inherit;
 }
 #menu a{
-text-decoration: none;
+	text-decoration: none;
     display: block;
 }
 
@@ -85,8 +85,12 @@ text-decoration: none;
 
 /* fin css menu */
 
+.text-center{
 
+ 
+ 	font-family: 'Raleway', sans-serif;
+}
 
 .container{
-	padding-top:  40px;
+	padding-top:  100px;
 }
