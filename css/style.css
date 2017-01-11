@@ -135,15 +135,19 @@ article{
 
 
 }
-.Page{
+/*.Page{
 	margin: 40px auto;
 	margin-top: 50px;
     width: 1000px;
     border: 1px transparent;
-    /*box-shadow: 0px 0px 8px #C0C0C0;*/
+    /*box-shadow: 0px 0px 8px #C0C0C0;
     padding: 20px 20px 20px 20px;
     border-radius: 2%
-    background-color: #2c5362;
+    background-color: #2c5362; */
+
+.Page{
+	margin-top: 50px;
+}
 
 }
 
@@ -215,14 +219,15 @@ h1{
 }
 
 #titre{
-	margin-left: 300px;
+	text-align: center;
 	color: #F1C2B6;
 	text-shadow: 1px 1px 8px #361226;
+	
 
 }
 
 #titre2{
-	margin-left: 400px;
+
 	color: #F1C2B6;
 	text-shadow: 1px 1px 8px #361226;
 }
