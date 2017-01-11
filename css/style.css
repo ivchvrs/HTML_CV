@@ -127,7 +127,7 @@ nav{
 
 
 .desc{
-	padding: 10px 20px 460px 30px;
+	padding: 10px 20px 460px 20px;
 	background-color: #C83521;
 	background-color: rgba(255, 255, 255, 0.5);
 	opacity: 10%; 
@@ -139,6 +139,7 @@ nav{
 	text-align: center;
 
 
+
 }
 .descr{
 	font-family: 'Raleway', sans-serif;
@@ -148,7 +149,7 @@ nav{
 }
 .imgP{
 	padding: 10px 10px 10px 10px;
-
+    margin-left: 47px;
 	
 
 }

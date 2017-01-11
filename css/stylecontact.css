@@ -106,6 +106,8 @@ body{
 	background-image:url(../wall466305.png);
 	background-attachment:fixed;
 }
+
+
 nav{                        
 	              /* Description */
 	position: fixed;
@@ -114,12 +116,12 @@ nav{
 	width: 15%;
 	margin-left: 10px;
 	margin-top: 55px;
-	
+
 }
 
 
 .desc{
-	padding: 10px 20px 460px 30px;
+	padding: 10px 20px 460px 20px;
 	background-color: #C83521;
 	background-color: rgba(255, 255, 255, 0.5);
 	opacity: 10%; 
@@ -139,8 +141,11 @@ nav{
 
 }
 .imgP{
-	padding: 30px 10px 10px 10px;
-	align-content:center;
+	padding: 10px 10px 10px 10px;
+	margin-left: 47px;
+
+	
+
 }
 	img {
 	border-radius: 15%;
