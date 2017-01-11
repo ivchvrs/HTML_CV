@@ -16,8 +16,9 @@ header{   /*RESPONSIVE*/
 }
 
 #menu { /* style ensemble menu */
-	position: fixed;
 	
+	justify-content: center;
+	position: fixed;	
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	font-size: 21px;
@@ -43,7 +44,11 @@ html>body #menu li {
 	border-right: 1px solid transparent;
 }
 #menu li ul {
+
+	display: flex;
+	flex-direction: column;
 	position: absolute;
+
 	width: 250px;
 	left: -999em;
 }
@@ -58,18 +63,38 @@ html>body #menu li ul ul{
 {
         color: #fff; /* On passe le texte en noir... */
         background: #901D30; /* ... et au contraire, le fond en blanc */
+        animation: bouton 4s infinite;
+    }
+
+    @keyframes bouton {
+    0%   {background: #361226}
+    25%  {background: #901D30}
+    50%	 {background: #C83521}
+    70%  {background: #901D30}
+    100% {background: #361226}
 }
+
 #menu ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
+    display: flex;
+	flex: column;
 }
 #menu a{
 text-decoration: none;
     display: block;
 }
 
+#list a{
+	display: flex;
+	flex-direction: column;
+}
+
 #menu li:hover ul{
-	left: auto; 
+	display: flex;
+	flex-direction: column;
+	left: 790px; 
+	width: 250px;
 }
 
 /*###########################################################################################*/
@@ -116,6 +141,10 @@ nav{
 .imgP{
 	padding: 30px 10px 10px 10px;
 	align-content:center;
+}
+	img {
+	border-radius: 15%;
+	position: center;
 
 }
 article{
