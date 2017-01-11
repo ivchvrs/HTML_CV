@@ -1,23 +1,27 @@
-/* menu deroulant */
+/*############################################################################################*/
+/* -------------------------------------------MENU DEROULANT----------------------------------*/
+/*###########################################################################################*/
+
+
+header{   /*RESPONSIVE*/
+	display: flex;
+    justify-content: center;
+	width: 100%;
+	margin-top: 10px;
+}
 
 #menu, #menu ul { /* Liste */
-	padding: 10px 10px 0px 0px; /* pas de marge */
-	margin: 0px; 
-	list-style: none;
-	line-height: 25px;
-	text-align: center;
 
+	text-align: center;
 }
 
 #menu { /* style ensemble menu */
 	position: fixed;
-	margin-top: -50px;
-	margin-left: 450px;
+	
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	font-size: 21px;
 }
-
 #menu a { /* contenu de la liste */
 	display: block; /* on change le type d'élément, les liens deviennent des balises de type block */
     padding: 0;
@@ -26,49 +30,33 @@
 	box-shadow: 0px 0px 8px #C0C0C0;
     color: #000;
     text-decoration: none;
-    width: 240px;
+    width: 250px;
 }
-
 #menu li { /* Éléments des listes */ 
 	float: center; /* IE */
-	border-right: 1px solid #fff;
+	border-right: 1px solid #fff;*/
 	position: relative;
 	display: inline-block;
 }
-
 html>body #menu li {
 	border-right: 1px solid transparent;
 }
-
 #menu li ul {
 	position: absolute;
-	width: 144px;
+	width: 250px;
 	left: -999em;
-
 }
-
-#menu li ul li {
-	border-top: 1px solid #fff;
-
-}
-html>body # li ul li {
-	border-top: 1px solid transparent;
-}
-
 #menu li ul ul {
-	margin: -22px 0 0 144px;
-	border-left: 1px solid #fff;
-
+	
+	border-left: 1px solid #fff; 
 }
-
 html>body #menu li ul ul{
 	border-left: 1px solid transparent
 }
-
 #menu a:hover /* Lorsque la souris passe sur un des liens */    
 {
         color: #fff; /* On passe le texte en noir... */
-        background: Tomato; /* ... et au contraire, le fond en blanc */
+        background: #E04A17; /* ... et au contraire, le fond en blanc */
 }
 #menu ul li {
 /* on enlève ce comportement pour les liens du sous menu */
@@ -80,51 +68,68 @@ text-decoration: none;
 }
 
 #menu li:hover ul{
-	left: auto;
+	left: auto; 
+}
+
+/*###########################################################################################*/
+/* -------------------------------------------   CORPS SITE  --------------------------------*/
+/*###########################################################################################*/
+
+
+body{
+	background-color:#313534;
+	
+	background-attachment:fixed;
 }
 
 
-/* -------------------------------------------   CORPS SITE  --------------------------------*/
-
-
-
 nav{                        
-	float: left;              /* Description */
+	              /* Description */
 	position: fixed;
-	margin-left: 60px;
+	display: flex;
+    justify-content: left;
+	width: 15%;
+	margin-left: 10px;
+	margin-top: 55px;
 	border: 1px solid black;
 }
 
 
 .desc{
-	padding: 50px 50px 50px 50px;
+	padding: 10px 20px 305px 30px;
+	background-color: #585E5E;
+	opacity: 10%; 
+
 	
 }
 .imgP{
-	padding: 10px 10px 10px 10px;
+	padding: 30px 10px 10px 10px;
+	position: center;
+
 }
 
 
-body{
-	background-color: #FFFFFF;
-}
 
+article{
+	background-color: #585E5E;
+}
 .Page{
 	margin: 40px auto;
 	margin-top: 50px;
-    width: 1050px;
+    width: 1000px;
     border: 1px transparent;
-    box-shadow: 0px 0px 8px #C0C0C0;
+    /*box-shadow: 0px 0px 8px #C0C0C0;*/
     padding: 20px 20px 20px 20px;
     border-radius: 2%
+    background-color: #585E5E;
 }
 
 h1{
 	margin-top: 20px;
-	color:#061719;
+	color:#E04A17;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
-	text-shadow: 2px 2px 8px #C0C0C0;
+	/*text-shadow: 2px 2px 8px #C0C0C0;*/
 }
 
 /* Div INFORMATION */
@@ -186,12 +191,12 @@ h1{
 
 #titre{
 	margin-left: 300px;
-	color: Tomato;
+	color: #E04A17;
 }
 
 #titre2{
 	margin-left: 400px;
-	color: Tomato;
+	color: #E04A17;
 }
 
 #ville{
