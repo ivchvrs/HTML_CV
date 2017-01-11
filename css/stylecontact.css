@@ -194,6 +194,7 @@ iframe{
 }
 
 .container{
+
 	margin-top: 35px;
 	background-color: #C83521;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -211,3 +212,4 @@ iframe{
 h2{
 	font-family: 'Raleway', sans-serif;
 	color:#361226;
+}
