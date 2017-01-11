@@ -122,15 +122,20 @@ article{
 	margin-top: 100px;
 	display: flex;
 	justify-content: center;
+
 }
+
 iframe{
 	display: flex;
 	justify-content: center;
+	animation: carte 4s ;
+    }
+
+    @keyframes carte {
+    0%   {opacity: 0}
+    100% {opacity: 1}
 
 }
-
-
-
 
 .text-center{
 
@@ -139,5 +144,20 @@ iframe{
 }
 
 .container{
-	padding-top:  100px;
+	margin-top: 35px;
+	background-color: #C83521;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 10%; 
+	border-radius: 20px;
+/* anime */
+    position: relative;
+    animation: mymove 2s ;
 }
+/* anime */
+@keyframes mymove {
+     0%   {left: 1500px;}
+     100% {left:  0px;}
+}
+h2{
+	font-family: 'Raleway', sans-serif;
+	color:#361226;
