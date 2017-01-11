@@ -150,8 +150,19 @@ nav{
 .imgP{
 	padding: 10px 10px 10px 10px;
     margin-left: 47px;
+}
+/* SOCIALPARTIINCO*/
+.social{
+	display: flex;
+	padding-top: 450px;
+	padding-left: 20px;
 	
+}
 
+.social img {
+	width: 50px;
+	padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
 }
 
 
