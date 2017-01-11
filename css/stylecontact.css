@@ -121,11 +121,11 @@ nav{
 
 
 .desc{
-	padding: 10px 20px 460px 20px;
+	padding: 10px 20px 350px 20px;
 	background-color: #C83521;
 	background-color: rgba(255, 255, 255, 0.5);
 	opacity: 10%; 
-	border-radius: 20px;	
+	border-radius: 20px;		
 }
 .desgauche{
 	border: 0.1px solid;
@@ -150,8 +150,24 @@ nav{
 	img {
 	border-radius: 15%;
 	position: center;
-
 }
+
+/* SOCIALPARTIINCO */
+
+.social {
+	display: flex;
+	flex-direction: row;
+	/*padding-top: 450px; */
+	padding-left: 20px;
+}
+
+.social img {
+	width: 50px;
+	padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
+}
+
+
 article{
 	margin-top: 100px;
 	display: flex;
