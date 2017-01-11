@@ -1,89 +1,191 @@
-/* menu deroulant */
+/*############################################################################################*/
+/* -------------------------------------------MENU DEROULANT----------------------------------*/
+/*###########################################################################################*/
+
+
+header{   /*RESPONSIVE*/
+	display: flex;
+    justify-content: center;
+	width: 100%;
+	margin-top: 10px;
+}
 
 #menu, #menu ul { /* Liste */
-	padding: 10px 10px 0px 0px; /* pas de marge */
-	margin: 0px; 
-	list-style: none;
-	line-height: 25px;
-	text-align: center;
 
+	text-align: center;
 }
 
 #menu { /* style ensemble menu */
-	position: fixed;
 	
-	margin-left: 450px;
+	justify-content: center;
+	position: fixed;	
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	font-size: 21px;
 }
-
 #menu a { /* contenu de la liste */
 	display: block; /* on change le type d'élément, les liens deviennent des balises de type block */
     padding: 0;
     background: #F5F5F5;
 
+
 	box-shadow: 0px 0px 8px #C0C0C0;
     color: #000;
     text-decoration: none;
-    width: 240px;
+    width: 250px;
 }
-
 #menu li { /* Éléments des listes */ 
 	float: center; /* IE */
-	border-right: 1px solid #fff;
+	border-right: 1px solid #fff;*/
 	position: relative;
 	display: inline-block;
 }
-
 html>body #menu li {
 	border-right: 1px solid transparent;
 }
-
 #menu li ul {
+
+	display: flex;
+	flex-direction: column;
 	position: absolute;
-	width: 144px;
+
+	width: 250px;
 	left: -999em;
-
 }
-
-#menu li ul li {
-	border-top: 1px solid #fff;
-
-}
-html>body # li ul li {
-	border-top: 1px solid transparent;
-}
-
 #menu li ul ul {
-	margin: -22px 0 0 144px;
-	border-left: 1px solid #fff;
-
+	
+	border-left: 1px solid #fff; 
 }
-
 html>body #menu li ul ul{
 	border-left: 1px solid transparent
 }
-
 #menu a:hover /* Lorsque la souris passe sur un des liens */    
 {
         color: #fff; /* On passe le texte en noir... */
-        background: Tomato; /* ... et au contraire, le fond en blanc */
+        background: #901D30; /* ... et au contraire, le fond en blanc */
+        animation: bouton 4s infinite;
+    }
+
+    @keyframes bouton {
+    0%   {background: #361226}
+    25%  {background: #901D30}
+    50%	 {background: #C83521}
+    70%  {background: #901D30}
+    100% {background: #361226}
 }
+
 #menu ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
+    display: flex;
+	flex: column;
 }
 #menu a{
-	text-decoration: none;
+text-decoration: none;
     display: block;
 }
 
-#menu li:hover ul{
-	left: auto;
+#list a{
+	display: flex;
+	flex-direction: column;
 }
 
-/* fin css menu */
+#menu li:hover ul{
+	display: flex;
+	flex-direction: column;
+	left: 790px; 
+	width: 250px;
+}
+
+/*###########################################################################################*/
+/* -------------------------------------------   CORPS SITE  --------------------------------*/
+/*###########################################################################################*/
+
+body{
+	background-color:#313534;
+	background-image:url(../wall466305.png);
+	background-attachment:fixed;
+}
+
+
+nav{                        
+	              /* Description */
+	position: fixed;
+	display: flex;
+    justify-content: left;
+	width: 15%;
+	margin-left: 10px;
+	margin-top: 55px;
+
+}
+
+
+.desc{
+	padding: 10px 20px 350px 20px;
+	background-color: #C83521;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 10%; 
+	border-radius: 20px;		
+}
+.desgauche{
+	border: 0.1px solid;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+
+
+}
+.descr{
+	font-family: 'Raleway', sans-serif;
+	color:#361226;
+	text-align:  center;
+
+}
+.imgP{
+	padding: 10px 10px 10px 10px;
+	margin-left: 47px;
+
+	
+
+}
+	img {
+	border-radius: 15%;
+	position: center;
+}
+
+/* SOCIALPARTIINCO */
+
+.social {
+	display: flex;
+	flex-direction: row;
+	/*padding-top: 450px; */
+	padding-left: 20px;
+}
+
+.social img {
+	width: 50px;
+	padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
+}
+
+
+article{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+
+}
+
+iframe{
+	display: flex;
+	justify-content: center;
+	animation: carte 4s ;
+    }
+
+    @keyframes carte {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+
+}
 
 .text-center{
 
@@ -92,5 +194,22 @@ html>body #menu li ul ul{
 }
 
 .container{
-	padding-top:  100px;
+
+	margin-top: 35px;
+	background-color: #C83521;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 10%; 
+	border-radius: 20px;
+/* anime */
+    position: relative;
+    animation: mymove 2s ;
+}
+/* anime */
+@keyframes mymove {
+     0%   {left: 1500px;}
+     100% {left:  0px;}
+}
+h2{
+	font-family: 'Raleway', sans-serif;
+	color:#361226;
 }

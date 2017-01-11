@@ -1,221 +1,270 @@
-/* menu deroulant */
+/*############################################################################################*/
+/* -------------------------------------------MENU DEROULANT----------------------------------*/
+/*###########################################################################################*/
+
+
+header{   /*RESPONSIVE*/
+	display: flex;
+    justify-content: center;
+	width: 100%;
+	margin-top: 10px;
+}
 
 #menu, #menu ul { /* Liste */
-	padding: 10px 10px 0px 0px; /* pas de marge */
-	margin: 0px; 
-	list-style: none;
-	line-height: 25px;
-	text-align: center;
 
+	text-align: center;
 }
 
 #menu { /* style ensemble menu */
-	position: fixed;
-	margin-top: -50px;
-	margin-left: 450px;
+	
+	justify-content: center;
+	position: fixed;	
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	font-size: 21px;
 }
-
 #menu a { /* contenu de la liste */
 	display: block; /* on change le type d'élément, les liens deviennent des balises de type block */
     padding: 0;
     background: #F5F5F5;
 
+
 	box-shadow: 0px 0px 8px #C0C0C0;
     color: #000;
     text-decoration: none;
-    width: 240px;
+    width: 250px;
 }
-
 #menu li { /* Éléments des listes */ 
 	float: center; /* IE */
-	border-right: 1px solid #fff;
+	border-right: 1px solid #fff;*/
 	position: relative;
 	display: inline-block;
 }
-
 html>body #menu li {
 	border-right: 1px solid transparent;
 }
-
 #menu li ul {
+
+	display: flex;
+	flex-direction: column;
 	position: absolute;
-	width: 144px;
+
+	width: 250px;
 	left: -999em;
-
 }
-
-#menu li ul li {
-	border-top: 1px solid #fff;
-
-}
-html>body # li ul li {
-	border-top: 1px solid transparent;
-}
-
 #menu li ul ul {
-	margin: -22px 0 0 144px;
-	border-left: 1px solid #fff;
-
+	
+	border-left: 1px solid #fff; 
 }
-
 html>body #menu li ul ul{
 	border-left: 1px solid transparent
 }
-
 #menu a:hover /* Lorsque la souris passe sur un des liens */    
 {
         color: #fff; /* On passe le texte en noir... */
-        background: Tomato; /* ... et au contraire, le fond en blanc */
+        background: #901D30; /* ... et au contraire, le fond en blanc */
+        animation: bouton 4s infinite;
+    }
+
+    @keyframes bouton {
+    0%   {background: #361226}
+    25%  {background: #901D30}
+    50%	 {background: #C83521}
+    70%  {background: #901D30}
+    100% {background: #361226}
 }
+
 #menu ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
+    display: flex;
+	flex: column;
 }
 #menu a{
 text-decoration: none;
     display: block;
 }
 
+#list a{
+	display: flex;
+	flex-direction: column;
+}
+
 #menu li:hover ul{
-	left: auto;
+	display: flex;
+	flex-direction: column;
+	left: 790px; 
+	width: 250px;
 }
 
-
+/*###########################################################################################*/
 /* -------------------------------------------   CORPS SITE  --------------------------------*/
-
-
-
-nav{                        
-	float: left;              /* Description */
-	position: fixed;
-	margin-left: 60px;
-	border: 1px solid black;
-}
-
-
-.desc{
-	padding: 50px 50px 50px 50px;
-	
-}
-.imgP{
-	padding: 10px 10px 10px 10px;
-}
+/*###########################################################################################*/
 
 
 body{
-	background-color: #FFFFFF;
+	background-color:#313534;
+	background-image:url(../wall466305.png);
+	background-attachment:fixed;
 }
-
-.Page{
-	margin: 40px auto;
-	margin-top: 50px;
-    width: 1050px;
-    border: 1px transparent;
-    box-shadow: 0px 0px 8px #C0C0C0;
-    padding: 20px 20px 20px 20px;
-    border-radius: 2%
+nav{                        
+	              /* Description */
+	display: flex;
+	position: fixed;
+	display: flex;
+    justify-content: left;
+	width: 15%;
+	margin-left: 10px;
+	margin-top: 55px;
+	animation: description 1s ;
+    }
+    @keyframes description {
+    0%   {opacity: 0}
+    100% {opacity: 1}
 }
-
-h1{
-	margin-top: 20px;
-	color:#061719;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	text-shadow: 2px 2px 8px #C0C0C0;
-}
-
-/* Div INFORMATION */
-
-.info{
-	margin: center;
-	padding: 5px 20px 10px 20px;
-	background-color: #F5F5F5;
-	box-shadow: 0px 0px 8px #C0C0C0;
-
-}
-
-.perso{
-	font-family: 'Raleway', sans-serif;
-
-}
-.img{
-
-	float: right;
-	margin-top: 4px;
-	
-}
- #contact{
- 	margin: 0px;
- 	color:#A9A9A9;
- 	font-weight: 'Raleway', sans-serif;
- }
- #perso {
-
- 	color: #A9A9A9;
- 	font-family: 'Raleway', sans-serif;
- 	margin: 0px;
- }
-
-/* Fermeture d'info */
-
-
- .groupe {   /* casse exp+for */
- 	background-color: #F5F5F5;
- 	padding: 10px 10px 10px 20px;
- 	box-shadow: 0px 0px 8px #C0C0C0;
- }
-
-#experience{
-	margin-left: 100px;
-	font-family: 'Reem Kufi', sans-serif;
-
-	
-}
-.Date{
-	list-style:none;
-	
-	float: left;
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
-
-
-}
-
-#titre{
-	margin-left: 300px;
-	color: Tomato;
-}
-
-#titre2{
-	margin-left: 400px;
-	color: Tomato;
-}
-
-#ville{
-	color:#808080;
-}
-
-.fin{
-	padding: 5px 10px 10px 10px;
-	margin: auto;
-	margin-top: 45px;
-	background-color: #F5F5F5;
-	box-shadow: 0px 0px 8px #C0C0C0;
-}
-
 h2{
 	font-family: 'Raleway', sans-serif;
-	color:#696969;
+	color:#361226;
+	}
+.desc{
+	padding: 10px 20px 350px 20px;
+	background-color: #C83521;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 10%; 
+	border-radius: 20px;	
 }
+.desgauche{
+	border: 0.1px solid;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+.descr{
+	font-family: 'Raleway', sans-serif;
+	color:#361226;
+	text-align:  center;
+}
+.imgP{
+	padding: 10px 10px 10px 10px;
+    margin-left: 47px;
+}
+
+/* SOCIALPARTIINCO*/
+.social{
+	display: flex;
+	flex-direction: row;
+	/*padding-top: 450px; */
+	padding-left: 20px;	
+}
+.social img {
+	width: 50px;
+	padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
+ }
+
+/* Fermeture de description */
 
 #at{
 	margin-left: 400px;
 	float: right;
 }
 img {
-	border-radius: 15%
-
+	border-radius: 15%;
+	position: center;
 }
+/*---------------------------LOODING-----------------------*/
+.introduction{
+	margin-top: 250px;
+	display: flex;
+	
+}
+
+
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+/*####################################SVG#################################*/
