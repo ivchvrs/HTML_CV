@@ -13,19 +13,43 @@ body{
 
 .section{
  
-  margin-top: 70px;
+  margin-top: 10px;
 }
 .intro{
-  margin: 15px;
-  background-color: #C83521;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: 10%; 
-  border-radius: 20px;
+  margin-bottom: 15px;
 }
+
+.TitreCV{
+  padding: 10px;
+}
+
 .contenuintro{
   background-color: #C83521;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 3%;
 }
+
+.Gtitre{
+  background-color: #E0503D;
+  padding-top: 10px;
+  border-radius: 5px;
+  color: White;
+
+}
+
+.devtabl{
+  
+  list-style-type: none;
+
+}
+
+.iconbas{
+
+  margin-top: 10px;
+   animation: bounce 2s infinite;
+        filter: grayscale(0);
+        transform: scale(1.03);
+      }
+
 
 
