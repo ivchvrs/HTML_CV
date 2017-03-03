@@ -1,13 +1,7 @@
-@media screen and (max-width: 950px) {
-  .desc {
-  animation: responsive 1s;
-  animation-fill-mode: forwards;
-  }
-}
+
 nav{                        
 	margin-top: 70px;
 	margin-left: 15px; 
-	display: flex;
 	position: fixed;
     animation: description 1s ;
     }
@@ -40,10 +34,6 @@ h2{
 
 /* SOCIALPARTIINCO*/
 .social{
-	display: flex;
-	flex-direction: row;
-
-	/*padding-top: 450px; */
 	padding-left: 20px;	
 }
 .social img {
