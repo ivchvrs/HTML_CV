@@ -13,7 +13,7 @@ body{
 
 .section{
  
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .intro{
   margin-bottom: 15px;
@@ -30,6 +30,7 @@ body{
 }
 
 .Gtitre{
+  margin-top: 12%;
   background-color: #E0503D;
   padding-top: 10px;
   border-radius: 5px;
@@ -38,8 +39,12 @@ body{
 }
 
 .devtabl{
-  
+  width: 90%;
+  padding: 20px;
+  margin-left: 4%;
   list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
 
 }
 
