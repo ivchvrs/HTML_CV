@@ -1,0 +1,33 @@
+// ANNIMATION
+    @keyframes bouton {
+    0%   {background: #361226}
+    25%  {background: #901D30}
+    50%  {background: #C83521}
+    70%  {background: #901D30}
+    100% {background: #361226}
+}
+
+    @keyframes description {
+    0%   {filter: blur(5px);opacity: 0;left:  -250px}
+    100% {filter: blur(0px);opacity: 1;left: 0px}
+}
+
+	@keyframes responsive {
+ 	0%   {filter: blur(0px);opacity: 1;}
+	100% {filter: blur(10px);opacity: 0;}
+}
+
+//TAILLE PX MODIF
+
+@media screen and (max-width: 950px) {
+  .desc {
+  animation: responsive 1s;
+  animation-fill-mode: forwards;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section {
+      margin-left: 0%
+  }
+}

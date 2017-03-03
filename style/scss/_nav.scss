@@ -1,0 +1,60 @@
+@media screen and (max-width: 950px) {
+  .desc {
+  animation: responsive 1s;
+  animation-fill-mode: forwards;
+  }
+}
+nav{                        
+	margin-top: 70px;
+	margin-left: 15px; 
+	display: flex;
+	position: fixed;
+    animation: description 1s ;
+    }
+h2{
+	font-family: 'Raleway', sans-serif;
+	color:#361226;
+	}
+.desc{
+	padding: 10px 20px 10px 20px;
+	background-color: #C83521;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 10%; 
+	border-radius: 20px;	
+}
+.desgauche{
+	border: 0.1px solid;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+.descr{
+	font-family: 'Raleway', sans-serif;
+	color:#361226;
+	text-align:  center;
+  margin-bottom: 130px;
+}
+.imgP{
+	padding: 10px 10px 10px 10px;
+    margin-left: 47px;
+}
+
+/* SOCIALPARTIINCO*/
+.social{
+	display: flex;
+	flex-direction: row;
+
+	/*padding-top: 450px; */
+	padding-left: 20px;	
+}
+.social img {
+	width: 50px;
+	padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+ }
+ .social img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+ }
+

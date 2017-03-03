@@ -1,0 +1,36 @@
+
+//LES IMPORT
+@import 'menu';
+@import 'annim';
+@import 'nav';
+//FIN IMPORT
+
+body{
+  background-color:#313534;
+  background-image:url(../../wall466305.png);
+  background-attachment:fixed;
+}
+
+.section{
+ 
+  margin-top: 70px;
+}
+
+.intro{
+  margin: 15px;
+  background-color: #C83521;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 10%; 
+  border-radius: 20px;
+}
+.contenuintro{
+  background-color: #C83521;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3%;
+}
+
+@media screen and (max-width: 950px) {
+  .section {
+      margin-left: 0%
+  }
+}

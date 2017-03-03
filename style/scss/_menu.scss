@@ -1,0 +1,45 @@
+#menu, #menu ul { /* Liste */
+  text-align: center;
+}
+
+#menu { /* style ensemble menu */
+    
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+}
+#menu a { /* contenu de la liste */
+   display: block; /* on change le type d'élément, les liens deviennent des balises de type block */
+    
+    background: #F5F5F5;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+
+
+    box-shadow: 0px 0px 8px #C0C0C0;
+    color: #000;
+    text-decoration: none;
+    width: 250px;
+}
+#menu li { /* Éléments des listes */ 
+ 
+  border-right: 1px solid #fff; 
+  display: inline-block;
+}
+html>body #menu li {
+  border-right: 1px solid transparent;
+}
+
+
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #fff; /* On passe le texte en noir... */
+        background: #901D30; /* ... et au contraire, le fond en blanc */
+        animation: bouton 4s infinite;
+        filter: grayscale(0);
+        transform: scale(1.03);
+    }
+
+
+
+
